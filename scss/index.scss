@@ -1,0 +1,68 @@
+@import './reset';
+
+$font-color: #5a5a5c;
+$bg:#f0f0f0;
+$grey-bord: 3px solid #5d5d5d;
+$margin-center: 0 auto;
+$width-50per: 50%;
+$white-color: #ffffff;
+
+%disp-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    color: $font-color;
+}
+
+form {
+    background-color: $bg;
+    border: $grey-bord;
+    margin: $margin-center;
+    width: $width-50per;
+    @extend %disp-flex-column;
+    padding: 20px;
+
+    label, span{
+        margin-top: 20px;
+    }
+    
+    label:first-child {
+        margin-top: 0;
+    }
+
+    .input_text, select {
+        width: $width-50per;
+        border: none;
+        height: 20px;
+        margin-top: 5px;
+    }
+
+    .checks {
+        @extend %disp-flex-column;
+        label {
+            margin: 2px 0 0 12px;
+        }
+    }
+    
+    select {
+        background-color: $white-color;
+    }
+
+    textarea {
+        margin-top: 5px;
+    }
+
+    .submit {
+        width: 50px;
+        height: 25px;
+        margin-top: 10px;
+        background-color: #555555;
+        border: none;
+        color:$white-color;
+        text-transform: uppercase;
+        border-radius: 2px;
+        font-weight: bold;
+    }
+}

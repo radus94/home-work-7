@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+form, form .checks {
+  display: flex;
+  flex-direction: column; }
+
+body {
+  color: #5a5a5c; }
+
+form {
+  background-color: #f0f0f0;
+  border: 3px solid #5d5d5d;
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px; }
+  form label, form span {
+    margin-top: 20px; }
+  form label:first-child {
+    margin-top: 0; }
+  form .input_text, form select {
+    width: 50%;
+    border: none;
+    height: 20px;
+    margin-top: 5px; }
+  form .checks label {
+    margin: 2px 0 0 12px; }
+  form select {
+    background-color: #ffffff; }
+  form textarea {
+    margin-top: 5px; }
+  form .submit {
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    background-color: #555555;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: bold; }
